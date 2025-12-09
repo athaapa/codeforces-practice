@@ -15,8 +15,8 @@ def solve():
         edges[u].append(v)
         edges[v].append(u)
 
-    # Compute shortest distances from city 1 (0-indexed) to all cities using BFS
     dists = [float("inf")] * n
+
     dists[0] = 0
     q = deque([0])
     while q:
